@@ -24,4 +24,8 @@ public class Product {
 
     private Integer price;
 
+    public Product(ProductRequestDTO body) {
+        name = body.name();
+        price = body.price();
+    }
 }
